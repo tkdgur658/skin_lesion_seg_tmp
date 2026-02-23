@@ -1,0 +1,48 @@
+name: Skin_Lesion_Seg
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+      # PyTorch (CUDA 11.8)
+      - torch==2.0.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+      - torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+      
+      # Scientific
+      - numpy
+      - scipy
+      - pandas
+      - scikit-learn
+      - scikit-image
+      
+      # Image
+      - pillow
+      
+      # Visualization
+      - matplotlib
+      - seaborn
+      
+      # Deep Learning
+      - timm
+      - einops
+      - tensorboardX
+      
+      # Model Analysis
+      - ptflops
+      - thop
+      - torchsummary
+      
+      # Wavelet
+      - PyWavelets
+      
+      # Jupyter
+      - jupyter
+      - notebook
+      - ipykernel
+      
+      # Utils
+      - tqdm
+      - pyyaml

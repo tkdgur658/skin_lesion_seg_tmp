@@ -1,0 +1,18 @@
+# Excluded folders
+results/
+data/
+datasets/
+
+# Large files
+SLS_integrate.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude
+.claude/
